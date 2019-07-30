@@ -1,0 +1,11 @@
+<mvc:View controllerName="TableUsage.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="Your Quick Start application is ready!">
+				<content>
+				
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
