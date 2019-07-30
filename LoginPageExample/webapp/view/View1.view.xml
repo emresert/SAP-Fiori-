@@ -1,0 +1,37 @@
+<mvc:View controllerName="LoginPageExample.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:tnt="sap.tnt" xmlns="sap.m" >
+	<App>
+		<pages>
+			<Page title="XML Login Page Example">
+				<content>
+					<tnt:ToolHeader>
+						<Button icon = "sap-icon://menu2" type="transparent" />
+						<ToolbarSpacer/>
+						<Text text="Login Page"/>
+						<ToolbarSpacer/>
+						<Button text = "Welcome, User" type="transparent" />
+					</tnt:ToolHeader>
+					
+					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+						<items>
+							<Label text="Use your credentials"/>
+							<Input placeholder="User Name" />
+							<Input placeholder="Password" type="password" />
+							<Button width="12rem" text="Login" type="Emphasized" />
+						</items>
+					</VBox>
+				</content>
+				<footer>
+					<Bar>
+						<contentLeft>
+							<Text text="Hi , User" />
+						</contentLeft>
+							<contentRight>
+							<Text text="Hi , User" />
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
