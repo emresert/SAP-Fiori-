@@ -5,6 +5,64 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta charset="UTF-8">
 
+		<title>Deneme1</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m,sap.ui.commons"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"Deneme1": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+		
+		// Navbar Part
+		 var nav = new sap.ui.commons.ApplicationHeader();
+		     nav.setDisplayWelcome(true);
+		     nav.setDisplayLogoff(true);
+		     nav.setUserName("Emre");
+		     nav.setLogoText("Mission ui5");
+		     nav.placeAt("content");
+		 
+		 // Form Part
+		 
+		 var forms = new sap.ui.layout.form.SimpleForm({
+		 	
+		 	id : "myform",
+		 	content : [
+		 	
+		 		new sap.ui.commons.Label({text:"Kullanıcı Adı :"}),
+		 		new sap.ui.commons.TextField({value:"Emre" , width:"15em"}),
+		        new sap.ui.commons.Label({text:"Kullanıcı Soyadı :"}),
+		 		new sap.ui.commons.TextField({value:"Sert" , width:"15em"}),
+		 		
+		 		new sap.ui.commons.Button({
+		 		text : "Gonder",
+		 		press: function(oEvent){
+		 			alert(this.getText());
+		 		}
+		 		})
+		 		]
+		 });
+		     
+		 forms.placeAt("content");    
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	
+	</body>
+
+</html><!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
 		<title>NavbarAndFormObject</title>
 
 		<script id="sap-ui-bootstrap"
