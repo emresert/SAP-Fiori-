@@ -26,17 +26,20 @@
 		     nav.placeAt("content");
 		 
 		 // Form Part
-		 
 		 var forms = new sap.ui.layout.form.SimpleForm({
 		 	
 		 	id : "myform",
 		 	content : [
 		 	
+		 	// Text Box ve Label 
 		 		new sap.ui.commons.Label({text:"Kullanıcı Adı :"}),
 		 		new sap.ui.commons.TextField({value:"Emre" , width:"15em"}),
+		 		
+		 		
 		        new sap.ui.commons.Label({text:"Kullanıcı Soyadı :"}),
 		 		new sap.ui.commons.TextField({value:"Sert" , width:"15em"}),
 		 		
+		 		// Buton Event
 		 		new sap.ui.commons.Button({
 		 		text : "Gonder",
 		 		press: function(oEvent){
