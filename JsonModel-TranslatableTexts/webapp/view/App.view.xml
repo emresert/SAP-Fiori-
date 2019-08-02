@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="JsonModel-TranslatableTexts.controller.App"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<!-- method on App Controller is called here -->
+					<Button text="Say Hello" press=".onShowHello"/>
+					<!-- we can call json data with {} from path of json data -->
+					<Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
