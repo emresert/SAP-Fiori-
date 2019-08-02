@@ -5,7 +5,7 @@
 			<Page title="Title">
 				<content>
 					<!-- method on App Controller is called here -->
-					<Button text="Say Hello" press=".onShowHello"/>
+					<Button text="{i18n>showHelloButtonText}" press=".onShowHello"/>
 					<!-- we can call json data with {} from path of json data -->
 					<Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%"/>
 				</content>
